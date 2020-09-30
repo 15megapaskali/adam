@@ -8,13 +8,13 @@
 $color1:#E71D36;
 $color2:#2EC4B6;
 $color3: #EFFFE9;
-$color4: #011627;
+$color4: #5c5c5c;
 $bialy: #F5F5F5;
 $bronze: rgb(205, 127, 50);
 
 body {
   font-family: 'Lato', sans-serif;
-  // background-color: rgb(0, 62, 87);
+  
   background-image: linear-gradient(bottom, $bialy, snow);
   margin: auto;
   display: block;
@@ -79,9 +79,15 @@ body {
   padding-top: 15px;
   // Zdjęcie do wstawienia
   // background-image: url("../images/visa.jpg");
+  background-image: url("../images/tlo1.jpg");
   background-size: cover;
   background-position: center;
-  background-color: transparent;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  // background-color: transparent;
+  height: 85vh;
+  width: 100%;
 }
 
 
@@ -91,6 +97,7 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
+ 
 }
 
 .banner-title {
@@ -98,6 +105,7 @@ body {
   color: $color4;
   font-weight: normal;
   margin: 40px;
+  line-height: normal;
 }
 
 .button-title {
@@ -112,6 +120,7 @@ body {
   cursor: pointer;
   width: 310px;
   height: 67px;
+  margin-bottom:15%;
   &:hover{
     box-shadow: 5px 10px 14px $color4;
     transition: 0.3s;
@@ -122,12 +131,13 @@ body {
 }
 
 .banner-title {
-  font-size: 35px;
+  font-size: 4rem;
   color: $color4;
-  font-weight: normal;
+  font-weight: bold;
   margin: 40px;
   min-height: 80px;
   min-width: 200px;
+  text-shadow: 2px 2px 8px $color3 ;
 }
 
 .banner-text {
@@ -472,7 +482,7 @@ body {
 
 .price-list-elements:before {
   content: '';
-  background: url('../images/Ckechmark-1.svg');
+  // background: url('../images/Ckechmark-1.svg');
   font-size: 10px;
   line-height: 11px;
   text-align: center;
@@ -487,17 +497,17 @@ body {
 
 .price-basic .price-list-elements:nth-child(4):before {
   content: '';
-  background: url("../images/Close.svg");
+  // background: url("../images/Close.svg");
 }
 
 .price-basic .price-list-elements:nth-child(5):before {
   content: '';
-  background: url("../images/Close.svg");
+  // background: url("../images/Close.svg");
 }
 
 .price-pro .price-list-elements:nth-child(5):before {
   content: '';
-  background: url("../images/Close.svg");
+  // background: url("../images/Close.svg");
 }
 
 .container-title-pricing {
@@ -579,7 +589,7 @@ input[type=checkbox] + label[for=checkBoxForm]:before {
 }
 
 #checkBoxForm:checked ~ label[for=checkBoxForm]:before {
-  background: transparent no-repeat center center url("../images/Checkmark.svg");
+  // background: transparent no-repeat center center url("../images/Checkmark.svg");
 }
 
 #name {
