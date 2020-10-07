@@ -525,11 +525,11 @@ body {
     font-size:42px;
     margin-top: 30px;
     margin-bottom: 15px;
-    text-align: left;
+    text-align: center;
     }
   p{
     font-size: 16px;
-    text-align: left;
+    text-align: center;
     margin: 5px
   }
 }
@@ -738,7 +738,7 @@ input[type=checkbox] + label[for=checkBoxForm]:before {
     .promo-section {
       //width: 1352px;
       width: auto;
-      height: 530px;
+      height: min-content;
       margin: auto;
       justify-content: normal;
       .promo-head{
