@@ -5,7 +5,6 @@ import {Link} from "react-scroll";
 // import Header from './Header'
 // import Main from './MainBanner'
 import Gallery from './Gallery'
-import Contact from './Contact'
 import Banner from './Banner';
 import Uslugi from './Uslugi';
 
@@ -76,7 +75,7 @@ hamburger.addEventListener("click", function() {
     </section>
     {stan === ''  &&  <Banner/>}
     {stan === 'oferta' && <Uslugi/>}
-    {stan === 'geleria' && <Gallery/>}
+    {stan === 'galeria' && <Gallery/>}
     
     
   

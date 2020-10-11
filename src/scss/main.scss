@@ -1,5 +1,4 @@
 @import 'reset.css';
-@import 'flipper.css';
 
 @import "hamburgers.css";
 
@@ -690,10 +689,18 @@ input[type=checkbox] + label[for=checkBoxForm]:before {
   opacity: 1;
 }
 
+.li-gal{
+  display: flex;
+  flex-wrap: wrap;
+  .img-gal{
+    height: 100px;
+    width: auto;
 
+  }
+}
 .thumbnails{
-  height: 100px;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 1000px) {

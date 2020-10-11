@@ -2,7 +2,7 @@ import '../scss/main.scss';
 
 
 
-import "lightbox2"
+import "lightbox2";
 
 import $ from 'jquery';
 
