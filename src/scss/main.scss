@@ -5,7 +5,7 @@
 
 @import "iconmonstr-iconic-font.css";
 
-@import "/node_modules/lightbox2/dist/css/lightbox.css";
+@import "lightbox.css";
 
 $color1:#E71D36;
 $color2:#2EC4B6;
@@ -17,7 +17,7 @@ $bronze: rgb(205, 127, 50);
 body {
   font-family: 'Lato', sans-serif;
   
-  background-image: linear-gradient(bottom, $bialy, snow);
+  background-image: linear-gradient(to top, $bialy, snow);
   margin: auto;
   display: block;
   color: $color4;

@@ -1,5 +1,11 @@
 import '../scss/main.scss';
+
+
+
+import "lightbox2"
+
 import $ from 'jquery';
+
 
 console.log("test");
 
@@ -38,3 +44,15 @@ hamburger.addEventListener("click", function() {
         x.style.display = "none";
     }
 });
+
+const $listImage = ()=>{
+for (let index = 1; index <= 17; index++) {
+    const $element = $(`
+        <a href="images/image-${index}.jpg" data-lightbox="portfolio"><img src="images/image-${index}.jpg" alt="${index}" class="thumbnails"></a>
+    `);
+    $('.promo-container').append($element)
+}
+
+}
+
+$listImage();

@@ -19,8 +19,13 @@ entry: {
     new HtmlWebpackPlugin({
         template: path.join(__dirname, 'index.html'),
         hash: true
+    }),
+    new HtmlWebpackPlugin({
+        template: path.join(__dirname, 'galeria.html'),
+        filename: "./galeria.html", // name it 'home.html' and insert to the root of output folder
     })
     ],
+    
     devServer: {
         // host: "192.168.1.14",
         port: 5000,
