@@ -6,7 +6,7 @@
 
 @import "lightbox.css";
 
-$color1:#E71D36;
+$color1:rgb(229,25,36);
 $color2:#2EC4B6;
 $color3: #EFFFE9;
 $color4: #5c5c5c;
@@ -24,6 +24,10 @@ body {
 
 }
 
+#google-maps{
+  width: 340px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -35,11 +39,18 @@ body {
     display: none;
   }
   .logo {
-    font-size: 32px;
-    color: $color1;
-    opacity: 1;
-    text-decoration: none;
-    margin-left: 15px;
+    // font-size: 32px;
+    // color: $color1;
+    // opacity: 1;
+    // text-decoration: none;
+   max-width: 278px;
+  
+    margin:5px;
+    max-height: 70px;
+    margin-left: 2%;
+    &:hover{
+      cursor: pointer;
+    }
   }
 }
 
@@ -132,7 +143,7 @@ body {
 }
 
 .banner-title {
-  font-size: 4rem;
+  font-size: 295%;
   color: $color4;
   font-weight: bold;
   margin: 40px;
@@ -158,6 +169,21 @@ body {
         margin:3%;
         font-size: 1.5rem;
     }
+}
+
+.lista-img{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  li{
+    margin: 1.5%;
+    a{
+      img{
+        max-height: 200px;
+        width: auto;
+      }
+    }
+  }
 }
 
 .banner {
@@ -664,12 +690,12 @@ input[type=checkbox] + label[for=checkBoxForm]:before {
   box-shadow: 0px 3px 6px #00000029;
   opacity: 1;
   .footer-logo{
+    margin:2px;
     margin-left: 15px;
+    display: flex;
+    flex-direction: column;
     .logo{
-      font-size: 32px;
-      color: $color1;
-      opacity: 1;
-      text-decoration: none;
+      max-height: 50px;
     }
   }
   .footer-menu{
@@ -692,6 +718,7 @@ input[type=checkbox] + label[for=checkBoxForm]:before {
 .li-gal{
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
   .img-gal{
     height: 100px;
     width: auto;
@@ -704,14 +731,17 @@ input[type=checkbox] + label[for=checkBoxForm]:before {
 }
 
 @media (min-width: 1000px) {
-  .logo {
-    margin-left: 30px;
-  }
+  // .logo {
+  //   margin-left: 30px;
+    
+  // }
   .header {
     margin: auto;
     width: 100%;
+    
     .hamburger {
       display: none;
+      
     }
     .desktop-menu-list {
       display: flex;
@@ -729,6 +759,7 @@ input[type=checkbox] + label[for=checkBoxForm]:before {
       }
       a:hover {
         border-bottom: 4px solid $color1;
+        cursor: pointer;
       }
     }
 
@@ -972,7 +1003,7 @@ input[type=checkbox] + label[for=checkBoxForm]:before {
         text-decoration: none;
       }
       small{
-        margin-left: 30px;
+        // margin-left: 30px;
       }
     }
   }

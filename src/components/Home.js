@@ -7,7 +7,7 @@ import {Link} from "react-scroll";
 import Gallery from './Gallery'
 import Banner from './Banner';
 import Uslugi from './Uslugi';
-
+import Logo from '../images/logo.png';
 
 
 const Home = () => {
@@ -45,10 +45,9 @@ hamburger.addEventListener("click", function() {
 
 <body>
 <header className="header">
+    <img src={Logo} alt='logo' className="logo" onClick={()=>{setStan('')}}></img>
     <h1>
-        <a href={null} className="logo" onClick={()=>{setStan('')}}>
-            Usługi remontowo - budowalne Adam Mech
-        </a>
+        
     </h1>
     <nav className="desktop-menu">
         <ul className="desktop-menu-list">
@@ -106,7 +105,7 @@ hamburger.addEventListener("click", function() {
                 <div className="contact-head">
                     
                     
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2475.9775962307335!2d17.82924891566238!3d51.64193537965752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ab5428937acbb%3A0x4349c4a9c4a24d38!2sElewacje%20i%20wyko%C5%84czenia%20wn%C4%99trz!5e0!3m2!1spl!2spl!4v1602102289585!5m2!1spl!2spl" width="400" height="300" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2475.9775962307335!2d17.82924891566238!3d51.64193537965752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ab5428937acbb%3A0x4349c4a9c4a24d38!2sElewacje%20i%20wyko%C5%84czenia%20wn%C4%99trz!5e0!3m2!1spl!2spl!4v1602102289585!5m2!1spl!2spl" width="400" height="300" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0" id='google-maps'></iframe>
 
                 </div>
             </div>
@@ -119,18 +118,14 @@ hamburger.addEventListener("click", function() {
 </div>
 <footer className="footer-section">
     <div className="footer-logo">
-        <h2>
-            <a href={null} className="logo">
-                Usługi remontowo - budowalne Adam Mech
-            </a>
-        </h2>
+    <img src={Logo} alt='logo' className="logo" onClick={()=>{setStan('')}}></img>
         <small className="footer-text">
             © 2020 Adam Mech, All Rights Reserved<br/>
            
         </small>
     </div>
     <ul className="footer-menu footer-text">
-        <li><a href={null}>Polityka Prywatności</a></li>
+        {/* <li><a href={null}>Polityka Prywatności</a></li> */}
         <li>Strona stworzona przez <a href="https://vertago-web.000webhostapp.com/">Vertago</a></li> 
     </ul>
 </footer>
