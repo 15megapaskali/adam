@@ -86,10 +86,10 @@ hamburger.addEventListener("click", function() {
             </div>
             <div className="tele-adress">
                 <ul className="email-phone">
-                    <li><a href="mailto:info@Shop Online RWD.xyz"><i className="im im-mail"></i>
-                        kontakt@remonty-ostrow.pl</a>
+                    <li><a href="mailto:kontakt@remonty-ostrow.pl"><i className="im im-mail"></i>
+                         kontakt@remonty-ostrow.pl</a>
                     </li>
-                    <li><a href="tel:+48787430515"><i className="im im-phone"></i>787 430 515</a></li>
+                    <li><a href="tel:+48787430515"><i className="im im-phone"></i> 787 430 515</a></li>
                 </ul>
             </div>
             <p className="contact-text">
