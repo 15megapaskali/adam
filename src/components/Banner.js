@@ -4,10 +4,10 @@ const Banner = () => {
     return (
     <section className="banner-section">
         <div className="banner-head">
-            <h2 className="banner-title">
+            <h1 className="banner-title">
                 Usługi remontowo-budowalne<br/>
                 Adam Mech
-            </h2>
+            </h1>
 
             <a href="tel:+48787430515">
                 <button className="button-title">

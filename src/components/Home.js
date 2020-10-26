@@ -2,6 +2,7 @@ import React, {Component,useState,useEffect} from "react";
 
 import {Link} from "react-scroll";
 
+
 // import Header from './Header'
 // import Main from './MainBanner'
 import Gallery from './Gallery'
@@ -45,7 +46,7 @@ hamburger.addEventListener("click", function() {
 
 <body>
 <header className="header">
-    <img src={Logo} alt='logo' className="logo" onClick={()=>{setStan('')}}></img>
+    <img src={Logo} alt='logo adam mech' className="logo" onClick={()=>{setStan('')}}></img>
     <h1>
         
     </h1>
@@ -73,7 +74,7 @@ hamburger.addEventListener("click", function() {
         </div>
     </section>
     {stan === ''  &&  <Banner/>}
-    {stan === 'oferta' && <Uslugi/>}
+    {stan === 'oferta' && <Uslugi props={handleStanHome}/>}
     {stan === 'galeria' && <Gallery/>}
     
     

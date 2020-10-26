@@ -26,25 +26,25 @@ import img17 from '../images/image-17.jpg';
 
 const Gallery = () => {
 
-useEffect(()=>{
-    const $listImage = ()=>{
-        for (let index = 1; index <= 17; index++) {
-            const $element = $(`
-            <li class="li-gal">
-                <div class="img-gal">
-                    <a href="/images/image-${index}.jpg" data-lightbox="portfolio">
-                        <img src="/images/image-${index}.jpg" alt="${index}" class="thumbnails">
-                    </a>
-                </div>
-            </li>
-            `);
-            $('.lista-uslug').append($element)
-        }
+// useEffect(()=>{
+//     const $listImage = ()=>{
+//         for (let index = 1; index <= 17; index++) {
+//             const $element = $(`
+//             <li class="li-gal">
+//                 <div class="img-gal">
+//                     <a href="/images/image-${index}.jpg" data-lightbox="portfolio">
+//                         <img src="/images/image-${index}.jpg" alt="${index}" class="thumbnails">
+//                     </a>
+//                 </div>
+//             </li>
+//             `);
+//             $('.lista-uslug').append($element)
+//         }
         
-    }
-    $listImage()
+//     }
+//     $listImage()
     
-},[])
+// },[])
 
 
     
@@ -57,23 +57,23 @@ useEffect(()=>{
         <div className="promo-container">
 
             <ul className="lista-img">
-                <li><a href={img1} data-lightbox="portfolio"><img src={img1} alt=""></img></a></li>
-                <li><a href={img2} data-lightbox="portfolio"><img src={img2} alt=""></img></a></li>
-                <li><a href={img3} data-lightbox="portfolio"><img src={img3} alt=""></img></a></li>
-                <li><a href={img4} data-lightbox="portfolio"><img src={img4} alt=""></img></a></li>
-                <li><a href={img5} data-lightbox="portfolio"><img src={img5} alt=""></img></a></li>
-                <li><a href={img6} data-lightbox="portfolio"><img src={img6} alt=""></img></a></li>
-                <li><a href={img7} data-lightbox="portfolio"><img src={img7} alt=""></img></a></li>
-                <li><a href={img8} data-lightbox="portfolio"><img src={img8} alt=""></img></a></li>
-                <li><a href={img9} data-lightbox="portfolio"><img src={img9} alt=""></img></a></li>
-                <li><a href={img10} data-lightbox="portfolio"><img src={img10} alt=""></img></a></li>
-                <li><a href={img11} data-lightbox="portfolio"><img src={img11} alt=""></img></a></li>
-                <li><a href={img12} data-lightbox="portfolio"><img src={img12} alt=""></img></a></li>
-                <li><a href={img13} data-lightbox="portfolio"><img src={img13} alt=""></img></a></li>
-                <li><a href={img14} data-lightbox="portfolio"><img src={img14} alt=""></img></a></li>
-                <li><a href={img15} data-lightbox="portfolio"><img src={img15} alt=""></img></a></li>
-                <li><a href={img16} data-lightbox="portfolio"><img src={img16} alt=""></img></a></li>
-                <li><a href={img17} data-lightbox="portfolio"><img src={img17} alt=""></img></a></li>
+                <li><a href={img1} data-lightbox="portfolio"><img src={img1} alt="Elewacja domu Adam Mech"></img></a></li>
+                <li><a href={img2} data-lightbox="portfolio"><img src={img2} alt="Elewacja domu Adam Mech"></img></a></li>
+                <li><a href={img3} data-lightbox="portfolio"><img src={img3} alt="Elewacja domu Adam Mech"></img></a></li>
+                <li><a href={img4} data-lightbox="portfolio"><img src={img4} alt="Elewacja domu Adam Mech"></img></a></li>
+                <li><a href={img5} data-lightbox="portfolio"><img src={img5} alt="Elewacja domu Adam Mech"></img></a></li>
+                <li><a href={img6} data-lightbox="portfolio"><img src={img6} alt="Wykończenia wnętrz remonty ostrów"></img></a></li>
+                <li><a href={img7} data-lightbox="portfolio"><img src={img7} alt="Wykończenie łazienki remonty ostrów"></img></a></li>
+                <li><a href={img8} data-lightbox="portfolio"><img src={img8} alt="Wykończenie łazienki remonty ostrów"></img></a></li>
+                <li><a href={img9} data-lightbox="portfolio"><img src={img9} alt="Wykończenie łazienki remonty ostrów"></img></a></li>
+                <li><a href={img10} data-lightbox="portfolio"><img src={img10} alt="Wykończenie łazienki remonty ostrów"></img></a></li>
+                <li><a href={img11} data-lightbox="portfolio"><img src={img11} alt="Elewacja tynk"></img></a></li>
+                <li><a href={img12} data-lightbox="portfolio"><img src={img12} alt="Wykończenie łazienki remonty ostrów"></img></a></li>
+                <li><a href={img13} data-lightbox="portfolio"><img src={img13} alt="Wykończenie łazienki remonty ostrów"></img></a></li>
+                <li><a href={img14} data-lightbox="portfolio"><img src={img14} alt="Elewacja domu"></img></a></li>
+                <li><a href={img15} data-lightbox="portfolio"><img src={img15} alt="Wykończenie łazienki remonty ostrów"></img></a></li>
+                <li><a href={img16} data-lightbox="portfolio"><img src={img16} alt="Wykończenie łazienki remonty ostrów"></img></a></li>
+                <li><a href={img17} data-lightbox="portfolio"><img src={img17} alt="Wykończenie łazienki remonty ostrów"></img></a></li>
                 
             
             </ul>
